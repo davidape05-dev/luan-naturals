@@ -2,7 +2,7 @@
 // No WhatsApp Business API needed for this — these are plain wa.me deep
 // links that open a pre-filled chat.
 
-const BUSINESS_WHATSAPP_NUMBER = "254700000000"; // TODO: replace with real number, no leading +
+const BUSINESS_WHATSAPP_NUMBER = "254703705999"; // TODO: replace with real number, no leading +
 
 export function buildWhatsAppLink(message: string): string {
   const encoded = encodeURIComponent(message);
