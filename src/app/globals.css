@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #0f2b22;
+  --color-bg-deep: #0c241c;
+  --color-surface: #132f26;
+  --color-border: rgba(201, 162, 71, 0.2);
+  --color-border-strong: rgba(201, 162, 71, 0.4);
+  --color-gold: #c9a247;
+  --color-gold-light: #e9d8a6;
+  --color-text: #f2ead2;
+  --color-text-muted: #a9bdb1;
+  --color-text-faint: #8fae9c;
+}
+
+@theme inline {
+  --color-background: var(--color-bg);
+  --color-background-deep: var(--color-bg-deep);
+  --color-surface: var(--color-surface);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-foreground: var(--color-text);
+  --color-foreground-muted: var(--color-text-muted);
+  --color-foreground-faint: var(--color-text-faint);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-bg-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
